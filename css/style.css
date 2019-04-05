@@ -1,0 +1,288 @@
+a, body, dd, div, dl, dt, figure, footer, h1, h2, h3, h4, header, i, img, input, li, mark, ol, p, section, span, textarea, title, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  list-style: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent
+}
+
+img {
+  display: block;
+}
+
+body, html {
+  width: 100%;
+  font-family: "PingFang SC";
+}
+
+body {
+  color: #353535;
+  font-size: 8px;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 64px;
+  position: relative;
+}
+
+.logo {
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.logo img {
+  width: 86px;
+  height: 22px;
+  margin: 0 auto;
+}
+
+.logo .share {
+  position: absolute;
+  right: 46px;
+  top: 50%;
+  margin-top: -8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo .share .weixin {
+  margin-right: 20px;
+}
+
+.logo .share img {
+  width: 16px;
+  height: 13px;
+}
+
+.header {
+  width: 100%;
+  height: 14px;
+  margin-bottom: 26px;
+  color: #686868;
+  font-size: 8px;
+}
+
+.nav {
+  width: 152px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.current {
+  color: #501A82;
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  width: 96%;
+  height: 1px;
+  background-color: #501A82;
+  left: 2%;
+  top: 90%;
+}
+
+.swiper {
+  width: 790px;
+  margin: 0 auto;
+}
+
+.swiper-pagination span {
+  /*background-color: rgba(80, 26, 130, 0.8);*/
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.swiper img {
+  width: 100%;
+}
+
+.footer {
+  height: 200px;
+  background-color: red;
+  margin-bottom: 32px;
+}
+
+.fix-nav {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  margin-right: -384px;
+  margin-top: -70px;
+  width: 86px;
+  height: 145px;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+  border-radius: 4px;
+  color: #353535;
+  font-size: 8px;
+}
+
+.fix-nav-cell {
+  height: 29px;
+  line-height: 29px;
+  padding-left: 20px;
+}
+
+.fix-nav-current {
+  background-color: rgba(240, 193, 29, 0.28);
+}
+
+.details {
+  width: 716px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.details .title {
+  margin-top: 90px;
+  margin-bottom: 86px;
+}
+
+.details .title h1 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+
+.details .title h3 {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.details img {
+  width: 100%;
+}
+
+.details-2 .title {
+  margin-top: 24px;
+  margin-bottom: 46px;
+}
+
+.details-2 .title h1 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.goods {
+  width: 720px;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.goods .title {
+  padding: 8px 0;
+  background-color: #FAFAFA;
+  padding-left: 16px;
+  font-size: 12px;
+  color: #9A9A9A;
+  border-bottom: 1px solid #F3F3F3;
+}
+
+.goods-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.goods-item {
+  width: 179px;
+  text-align: center;
+  border-left: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+  color: #0A0A0A;
+  font-size: 9px;
+}
+
+.price {
+  color: #C53037;
+  font-size: 10px;
+  margin: 12px 0;
+}
+
+.goods-name {
+  margin: 8px 0;
+  margin-bottom: 6px
+}
+
+.goods-details {
+  font-size: 8px;
+}
+
+.goods-item-double {
+  width: 359px;
+}
+
+.goods-item img {
+  width: 100%;
+}
+
+footer {
+  margin-left: 122px;
+  margin-top: 28px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 7px;
+}
+
+footer .phones .name {
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+
+footer .phones .content {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+
+footer .phones .content dl {
+  margin-right: 30px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+footer .phones .content .num {
+  color: #501A82;
+}
+
+.copyright {
+  line-height: 12px;
+  font-weight: 300;
+}
+
+footer .right {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 126px;
+}
+
+footer .right img {
+  width: 60px;
+  height: 60px;
+  background-color: #501A82;
+}
+
+footer .right .officialQr {
+  margin-right: 64px;
+}
+
+footer .right .name {
+  font-size: 10px;
+  margin-bottom: 20px;
+}
