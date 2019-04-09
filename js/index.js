@@ -12,6 +12,7 @@ function size() {
 }
 $(function() {
   size();
+  var isClick = false
   var timer = null; //滚动截流定时器
   var curIndex = 1
   var sectionHeight = [ //各个section页面位置
@@ -19,19 +20,22 @@ $(function() {
         $('.swiper').offset().top,
         $('.details-1').offset().top,
         $('.goods').offset().top,
-        $('.details-2').offset().top,
-        $('footer').offset().top
+        $('.details-3').offset().top
     ];
-  $(window).scroll(function() { //页面滚动事件
-    clearTimeout(timer);
-    timer = setTimeout(changeCurrent, 10);
+  $(window).scroll(function(e) { //页面滚动事件
+    if (!isClick) {
+      timer = setTimeout(changeCurrent(), 100);
+    }
   });
 
   function changeCurrent() { //页面位置判断
     var scrollTop = $(window).scrollTop();
     for (var i = 0; i < sectionHeight.length; i++) { //遍历位置判断
-      if (sectionHeight[i] < scrollTop && scrollTop < sectionHeight[i + 1] && curIndex != i) { //设置导航显示切换区间
+      if (sectionHeight[i] <= scrollTop && scrollTop < sectionHeight[i + 1] && curIndex != i) { //设置导航显示切换区间
         navClassChange(i)
+      }
+      if (scrollTop >= sectionHeight[i] - 20 && curIndex != i) {
+        navClassChange(sectionHeight.length - 1)
       }
     }
   }
@@ -40,13 +44,17 @@ $(function() {
     pageJump($(this).index())
   });
   $('.fix-nav li').click(function(e) {
+    console.log($(this).index(), sectionHeight[$(this).index()])
     pageJump($(this).index())
   });
   //page跳转
   function pageJump(index) {
+    isClick = true
     navClassChange(index)
     $('body,html').animate({
-      scrollTop: sectionHeight[index]
+      scrollTop: sectionHeight[index] + 2
+    }, function() {
+      isClick = false
     });
   }
 

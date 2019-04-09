@@ -33,7 +33,7 @@ body {
 }
 
 .logo {
-  margin-bottom: 14px;
+  padding-bottom: 14px;
   position: relative;
 }
 
@@ -65,7 +65,7 @@ body {
 .header {
   width: 100%;
   height: 14px;
-  margin-bottom: 26px;
+  padding-bottom: 26px;
   color: #686868;
   font-size: 8px;
 }
@@ -108,12 +108,6 @@ body {
   width: 100%;
 }
 
-.footer {
-  height: 200px;
-  background-color: red;
-  margin-bottom: 32px;
-}
-
 .fix-nav {
   position: fixed;
   top: 50%;
@@ -148,8 +142,8 @@ body {
 }
 
 .details .title {
-  margin-top: 90px;
-  margin-bottom: 86px;
+  padding-top: 90px;
+  padding-bottom: 86px;
 }
 
 .details .title h1 {
@@ -168,8 +162,8 @@ body {
 }
 
 .details-2 .title {
-  margin-top: 24px;
-  margin-bottom: 46px;
+  padding-top: 24px;
+  padding-bottom: 46px;
 }
 
 .details-2 .title h1 {
@@ -180,8 +174,8 @@ body {
 .goods {
   width: 720px;
   margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 48px;
+  padding-top: 32px;
+  padding-bottom: 48px;
 }
 
 .goods .title {
@@ -209,6 +203,10 @@ body {
   font-size: 9px;
 }
 
+.goods-item .bottom {
+  margin: 0 8px;
+}
+
 .price {
   color: #C53037;
   font-size: 10px;
@@ -234,7 +232,7 @@ body {
 
 footer {
   margin-left: 122px;
-  margin-top: 28px;
+  padding-top: 28px;
   display: flex;
   justify-content: flex-start;
   font-size: 7px;
