@@ -47,6 +47,11 @@ $(function() {
     console.log($(this).index(), sectionHeight[$(this).index()])
     pageJump($(this).index())
   });
+  $('.share .weixin').click(function(e) {
+    $('body,html').animate({
+      scrollTop: $('.footer').offset().top
+    })
+  })
   //page跳转
   function pageJump(index) {
     isClick = true
